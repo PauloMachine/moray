@@ -7,5 +7,6 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./tests/setup-tests.ts",
   },
+  base: "/",
   plugins: [react()],
 } as UserConfig);
