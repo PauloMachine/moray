@@ -29,12 +29,12 @@ const HomeModal = ({ neighborhood, setNeighborhood }: IHomeModal) => {
         {
           data: population.map((pop) => pop.populacao),
           tension: 0.4,
-          borderColor: "#4285f4",
+          borderColor: neighborhood?.color || "#4285f4",
           backgroundColor: "rgba(0, 0, 255, 0.2)",
         },
       ],
     };
-  }, [population]);
+  }, [population, neighborhood]);
 
   useEffect(() => {
     if (neighborhood && population?.length) {
@@ -49,8 +49,8 @@ const HomeModal = ({ neighborhood, setNeighborhood }: IHomeModal) => {
 
   return (
     <Modal title="Evolução populacional" onClose={onClose}>
-      <Flex gap="50" justify="space-between">
-        <Flex gap="5">
+      <Flex gap="50" justify="space-between" style={{ height: 350 }}>
+        <Flex gap="15">
           <LabelValue label="Nome:" value={neighborhood?.name} />
           <LabelValue label="Setor:" value={neighborhood?.setor} />
           <LabelValue label="Zona:" value={neighborhood?.zona} />

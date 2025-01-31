@@ -6,6 +6,9 @@ const GeoJSON = <T,>({ data, onClick }: IGeoJSON<T>) => {
   return (
     <LGeoJSON
       data={data}
+      style={(feature) => ({
+        color: feature?.properties?.color || "#4285f4",
+      })}
       eventHandlers={{
         click: (event: LeafletMouseEvent) => {
           onClick(event.sourceTarget.feature.properties);

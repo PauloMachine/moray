@@ -10,6 +10,7 @@ export type TFeatureProperties = {
   name: string;
   setor: string;
   zona: string;
+  color: string;
 };
 
 export type TFeature<G extends string = "MultiPolygon"> = {

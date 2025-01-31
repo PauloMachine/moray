@@ -14,7 +14,8 @@
         "id": 1,
         "name": "Jd. Colinas",
         "setor": "Aquarius",
-        "zona": "Oeste"
+        "zona": "Oeste",
+        "color": "#4285f4"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -182,7 +183,8 @@
         "id": 2,
         "name": "Jd. das Industrias",
         "setor": "Jd. das Industrias",
-        "zona": "Oeste"
+        "zona": "Oeste",
+        "color": "#FA4335"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -630,7 +632,8 @@
         "id": 3,
         "name": "Jd. Alvorada",
         "setor": "Jd. das Industrias",
-        "zona": "Oeste"
+        "zona": "Oeste",
+        "color": "#FBBC05"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -746,7 +749,8 @@
         "id": 4,
         "name": "Pq. Res. Aquarius",
         "setor": "Aquarius",
-        "zona": "Oeste"
+        "zona": "Oeste",
+        "color": "#34A853"
       },
       "geometry": {
         "type": "MultiPolygon",
