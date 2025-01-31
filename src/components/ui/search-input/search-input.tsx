@@ -52,7 +52,7 @@ const SearchInput = ({ data, onSelect, placeholder }: ISearchInput) => {
             color="#aaa"
             onClick={onClear}
             style={{ cursor: "pointer" }}
-            data-testid="search-input-on-clear"
+            data-testid="on-clear"
           />
         )}
       </StyledInputContent>

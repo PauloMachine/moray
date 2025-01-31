@@ -22,7 +22,7 @@ const renderSearchInput = (onSelect = vi.fn()) =>
 
 describe("SearchInput Component", () => {
   beforeEach(() => {
-    vi.restoreAllMocks(); // Reset mocks before each test
+    vi.restoreAllMocks();
   });
 
   it("renders the input field correctly", () => {
@@ -62,7 +62,7 @@ describe("SearchInput Component", () => {
     const input = screen.getByTestId("search-input") as HTMLInputElement;
     await userEvent.type(input, "Jd. Colinas");
 
-    const clearButton = screen.getByTestId("search-input-on-clear");
+    const clearButton = screen.getByTestId("on-clear");
     await userEvent.click(clearButton);
 
     expect(input.value).toBe("");
