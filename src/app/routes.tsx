@@ -1,7 +1,7 @@
 import { Route, Routes as AppRoutes, Navigate } from "react-router-dom";
 import Home from "../pages/home.page";
 
-const routes = [{ path: "/home", component: Home }];
+const routes = [{ path: "/", component: Home }];
 
 const Routes = () => {
   return (
