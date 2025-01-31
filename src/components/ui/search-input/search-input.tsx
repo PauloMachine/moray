@@ -35,7 +35,7 @@ const SearchInput = ({ data, onSelect, placeholder }: ISearchInput) => {
   return (
     <StyledInputContainer>
       <StyledInputContent direction="row" gap="5">
-        <MdSearch size={24} color="#4285f4" />
+        <MdSearch size={24} color="#aaa" />
 
         <StyledInput
           data-testid="search-input"

@@ -62,7 +62,7 @@ export const StyledLi = styled.li`
   transition: background 0.2s;
 
   &:hover {
-    background: #4285f4;
-    color: #fff;
+    background: #ddd;
+    color: #000;
   }
 `;
