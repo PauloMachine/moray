@@ -58,7 +58,7 @@ const SearchInput = ({ data, onSelect, placeholder }: ISearchInput) => {
       </StyledInputContent>
 
       <AnimatePresence>
-        {showResults && filteredResults.length > 0 && (
+        {showResults && query.length > 0 && (
           <StyledUl
             as={motion.ul}
             initial={{ opacity: 0, y: -10 }}
@@ -66,11 +66,15 @@ const SearchInput = ({ data, onSelect, placeholder }: ISearchInput) => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
           >
-            {filteredResults.map((entry) => (
-              <StyledLi key={entry.value} onClick={() => handleSelect(entry)}>
-                {entry.label}
-              </StyledLi>
-            ))}
+            {filteredResults.length > 0 ? (
+              filteredResults.map((entry) => (
+                <StyledLi key={entry.value} onClick={() => handleSelect(entry)}>
+                  {entry.label}
+                </StyledLi>
+              ))
+            ) : (
+              <StyledLi>Nenhum resultado encontrado</StyledLi>
+            )}
           </StyledUl>
         )}
       </AnimatePresence>
